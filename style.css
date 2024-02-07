@@ -1,0 +1,666 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: red;
+    --white-color: #fff;
+    --text-color: #9e9999;
+    --black-color: #000;
+}
+
+
+.content {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+/* ****** Header *********/
+header {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.top_navbar {
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 11px 0px;
+    margin: 0px 7px;
+}
+
+.nav-link {
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: 700 !important;
+    font-weight: 500;
+    margin: 10px 4px;
+    color: #00000079;
+}
+
+.dropdown-menu {
+    width: 250px;
+    display: block;
+    opacity: 0;
+    transition: 0.2 ease-in;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-item {
+    width: 100% !important;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 12px;
+    color: rgba(0, 0, 0, 0.8) !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.038);
+}
+
+.dropdown-item:hover {
+    color: white !important;
+    background-color: rgb(250, 165, 26);
+}
+
+.nav-link:hover {
+    color: skyblue !important;
+}
+
+.form-select {
+    width: 90px;
+    position: relative;
+}
+
+.lang {
+    right: 60px;
+}
+
+@media (max-width: 991px) {
+    .main_nav {
+        background: rgb(17, 145, 208) !important;
+        overflow: hidden;
+    }
+
+    .nav-link {
+        color: white !important;
+        padding-left: 5px !important;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        background-color: rgb(8, 14, 29) !important;
+        color: white !important;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+
+    .dropdown-menu {
+        position: relative;
+        width: 100%;
+        background-color: rgb(17, 145, 208) !important;
+        transition: all 1s ease !important;
+        display: none !important;
+        position: relative;
+        transition: 1s ease;
+        overflow: visible !important;
+    }
+
+    .active {
+        display: block !important;
+        position: absolute;
+        opacity: 1;
+    }
+
+    .dropdown-item {
+        background-color: rgb(17, 145, 208) !important;
+        color: white !important;
+    }
+
+
+    .lang {
+        position: absolute !important;
+        top: 25px !important;
+        left: 50% !important;
+        cursor: pointer !important;
+    }
+}
+
+
+/******* Header **********/
+
+/******dort mevsim ******/
+.dort_mevsim {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center !important;
+}
+
+.dort_mevsim_img {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.animate {
+    background: url(images/yuvarlak.png);
+    animation: animated 3s linear infinite;
+    background-repeat: no-repeat;
+    background-size: calc(85%);
+    background-position: center;
+    transform: skew(180deg);
+}
+
+
+@keyframes animated {
+
+    0%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+
+    50% {
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+}
+
+/******dort mevsim ******/
+
+/******* Erciyes kıs paketleri  *******/
+
+.Snowboard {
+    width: 100%;
+    height: 730px;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden !important;
+}
+
+.snowboard_img_2:hover {
+    transform: scale(1.1);
+
+}
+
+
+.snowboard_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 300ms;
+
+}
+
+.card {
+    position: relative;
+    transition: all 300ms !important;
+    overflow: hidden !important;
+
+}
+
+.snowboard_img:hover {
+    transform: scale(1.1);
+}
+
+.snowboard_img_2 {
+    transition: all 300ms !important;
+}
+
+
+.snowboard-span {
+    left: 15px;
+    color: white;
+    font-size: 1.2rem;
+    font-family: serif;
+    background-color: rgb(242, 101, 34);
+    padding: 0 5px;
+    border-radius: 10px;
+    top: 10px;
+    z-index: 1;
+    position: absolute;
+    box-shadow: 1px 4px 7px 1px white;
+}
+
+.snowboard-title {
+    color: rgb(242, 101, 34) !important;
+    font-weight: bold;
+    bottom: 30%;
+    left: 20px;
+    font-size: 2rem;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 2px 1px 2px white;
+}
+
+.snowboard-title_1 {
+    color: rgb(242, 101, 34) !important;
+    font-weight: bold;
+    bottom: 38%;
+    left: 20px;
+    font-size: 2rem;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 2px 1px 2px white;
+}
+
+
+.snowboard-title_2 {
+    color: rgb(242, 101, 34) !important;
+    font-weight: bold;
+    bottom: 15%;
+    left: 20px;
+    color: white;
+    font-size: 2rem;
+    z-index: 1;
+    position: absolute;
+    text-shadow: 2px 1px 2px white;
+}
+
+
+
+.snowboard-text {
+    bottom: 2%;
+    left: 10px;
+    color: white;
+    font-size: 1.7rem;
+    z-index: 1;
+    font-weight: 500;
+    position: absolute;
+    text-shadow: 2px 1px 2px black;
+
+}
+
+
+.hovertext {
+    position: relative;
+    width: 200px;
+    height: 60px;
+    background: black;
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    padding-left: 40px;
+    transition: all 0.6s;
+}
+
+.hovertext:hover {
+    padding-left: 0px;
+    padding-right: 40px;
+    color: white;
+}
+
+.hovertext span {
+    position: absolute;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    background: greenyellow;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out;
+}
+
+.hovertext:hover span {
+    left: calc(100% - 55px);
+}
+
+/******* Erciyes kıs paketleri  *******/
+
+
+
+/******** halkkımızda ara bölme *****************/
+.h_ara_bölme {
+    width: 100%;
+    background-position: center !important;
+    background-size: cover !important;
+    height: 350px !important;
+    background: url(images/hakkımızda.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.ara_text {
+    color: orange;
+}
+
+
+/******** halkkımızda ara bölme *****************/
+
+
+
+/******** halkkımızda *****************/
+.h-row {
+    width: 100%;
+    height: 100%;
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+}
+
+.blob {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(248, 225, 141, 0.781), rgb(252, 219, 101));
+    background-size: cover;
+    animation: animate 5s linear infinite;
+    position: relative;
+}
+
+.blob_img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+.h-header {
+    color: rgb(17, 145, 208);
+}
+
+.animate2 {
+    background: url(images/yuvarlak.png);
+    background-repeat: no-repeat;
+    background-size: calc(85%);
+    background-position: center;
+    transform: skew(180deg);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        border-radius: 64% 36% 27% 73% / 55% 58% 42% 45%;
+    }
+
+    25% {
+        border-radius: 74% 27% 26% 38% / 73% 36% 64% 27%;
+    }
+
+    50% {}
+
+    75% {
+        border-radius: 28% 72% 44% 56% / 49% 40% 60% 51%;
+
+    }
+
+}
+
+
+/******** halkkımızda *****************/
+
+/*********** kayak temel *********/
+
+.k_box {
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.k_span {
+    top: -20px;
+    right: 15px;
+    background-color: #1191d0;
+    color: white;
+    z-index: 2;
+    border-radius: 15px;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.k_after {
+    position: absolute;
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.715));
+    width: 100%;
+    height: 50%;
+    left: 0;
+    transition: all 0.6s !important;
+    bottom: 0;
+}
+
+.k_box:hover .k_img {
+    transform: scale(1.1);
+}
+
+.k_img {
+    transition: all 0.6s;
+}
+
+.k_box:hover .k_after {
+    height: 100%;
+}
+
+.k_box_child {
+    top: 10px;
+}
+
+.k_after_2 {
+    width: 0%;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+    transition: all 0.6s;
+
+
+}
+
+.k_wraper:hover .k_after_2 {
+    width: 100%;
+}
+
+/*********** kayak temel *********/
+
+
+/*******  iletişim  **********/
+
+
+.containerindex {
+    background-color: rgba(128, 128, 128, 0.489);
+    padding: 1px;
+    border-radius: 1rem;
+    color: #fff;
+    height: 400px !important;
+}
+
+.map iframe {
+    padding: 0.5rem;
+    height: 400px !important;
+}
+
+
+.form h1 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 1rem;
+    letter-spacing: 2px;
+}
+
+.form-in {
+    margin-bottom: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.259);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-family: inherit;
+    transition: all 0.5s;
+}
+
+.form-in:focus {
+    border: 1px solid rgb(0, 106, 255);
+    outline: none;
+
+}
+
+.form-in::placeholder {
+    color: #aaa;
+}
+
+form textarea {
+    height: 10rem;
+}
+
+form button {
+    font-weight: bold;
+    cursor: pointer;
+    color: rebeccapurple;
+    font-size: 1.1rem !important;
+}
+
+form button:active {
+    transform: scale(0.98);
+}
+
+.form small {
+    font-size: 0.5rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #aaa;
+}
+
+/*******  iletişim  **********/
+
+/******** hizmet ön bilgi ******/
+.hizmet_banner_content {
+    border: 1.5px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.hizmet_banner .hizmet_banner_after {
+    width: 0;
+    content: '';
+    position: absolute;
+    left: 0;
+    background-color: gold;
+    bottom: 0.2px;
+    height: 3px;
+    transition: all 0.3s;
+    border-bottom-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+
+.hizmet_banner:hover .hizmet_banner_after {
+    width: 100%;
+}
+
+/******** hizmet ön bilgi ******/
+
+
+
+/************  footer  *************/
+
+.topx {
+    margin-top: 9rem !important;
+}
+
+
+.footer {
+    background: url(images/kapodokya.jpg);
+    background-color: rgb(11, 34, 88);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.footer::before {
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(23, 35, 62, 0.93);
+}
+
+.footer-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    cursor: pointer;
+}
+
+.f-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.f-text>a,
+.f-text>p {
+    text-decoration: none;
+    color: white;
+    transition: all 0.6s;
+}
+
+.f-text>a:hover,
+.f-text>p:hover {
+    color: rgb(178, 143, 0);
+}
+
+.icon {
+    z-index: 3;
+    background-color: rgba(255, 255, 255, 0.084);
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.icons {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.153);
+    border-radius: 50%;
+    padding: 10px;
+    transition: all 0.5s;
+}
+
+.icons:hover {
+    z-index: 6;
+    background-color: #1191d0;
+}
+
+.f_footer_img{
+    top: 5px;
+    width: 100%;
+    height: 100%;
+
+}
+.f_footer_img img{
+    width: 100%;
+}
+
+.ara_text_img{
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+
+}
+.ara_text_img img{
+    width: 100%;
+}
+.ara_text_img_2{
+    position: absolute;
+    left: -10px;
+    bottom: -5px;
+    width: 110%;
+}
+.ara_text_img_2 img{
+    width: 100%;
+}
+
+/************ footer  *************/
+

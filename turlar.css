@@ -1,0 +1,183 @@
+
+/******* Navbar **********/
+.navigation-wrap {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    background-color: rgba(0, 0, 0, 0.186);
+}
+
+.img-child {
+    font-size: 0.8rem;
+    font-family: cursive;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, rgb(57, 57, 171));
+}
+
+
+.navbar-nav{
+    margin-right: 3rem !important;
+}
+.navbar-nav li{
+    margin: 0 20px;
+}
+
+.nav-item:hover::after {
+    top: -45px !important;
+}
+
+.nav-link.dropdown-toggle::after {
+    display: none;
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block !important;
+    background-color: rgba(53, 10, 78, 0.255);
+}
+
+.dropdown-toggle:focus>.dropdown-menu {
+    display: none !important;
+}
+
+.dropdown-item {
+    color: black !important;
+}
+
+.dropdown a,
+.nav-item a {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    color: #fff
+}
+
+.dropdown a:hover {
+    color: rgba(0, 0, 0, 0.682);
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.hiden {
+    visibility: hidden !important;
+    opacity: 0;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .nav-item::after {
+        display: none;
+    }
+
+    .nav-item:hover::after {
+        display: none;
+    }
+}
+
+/******* Navbar **********/
+
+
+
+/****** Turlar sayfası header ************/
+.tur_container {
+    width: 90% !important;
+}
+
+.tur_header {
+    height: 580px;
+    width: 100%;
+    background-image: url(images/cinque-terre-1859688_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.tur_header_input {
+    width: 450px !important;
+}
+
+.tur_header_img {
+    width: 450px;
+    height: 450px;
+    position: relative;
+    z-index: 5;
+}
+
+.tur_header_img::after {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    content: '';
+    position: absolute;
+    background: rgb(255, 255, 255);
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.9052871148459384) 10%,
+            rgba(221, 227, 230, 0.41228991596638653) 59%,
+            rgba(153, 196, 235, 0.02853641456582634) 100%);
+    filter: blur(20px);
+    border-radius: 50%;
+}
+
+.tur_header .tur-content {
+    display: flex;
+    align-items: start;
+    text-align: left;
+    color: white;
+    position: absolute;
+    bottom: 3rem;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.tur_details_img {
+    width: 90px;
+    height: 70px;
+}
+
+.tur_populer {
+    border-top-left-radius: 5px !important;
+    border-top-right-radius: 5px !important;
+    background-color: rgb(0, 52, 102) !important;
+    color: rgb(255, 242, 230);
+    font-weight: 350;
+
+}
+
+.tur_box {
+    cursor: pointer;
+    transition: all 0.4s ease !important;
+}
+
+.tur_box:hover {
+    background-color: rgb(226, 226, 226) !important;
+}
+
+.tur_card {
+    cursor: default;
+    font-weight: 500;
+    color: rgb(0, 52, 102);
+    text-transform: uppercase;
+}
+
+.tur_card:hover {
+    text-decoration: underline !important;
+}
+
+.inuptext {
+    margin-left: 200px !important;
+}
+
+.card-img-bottom {
+    height: 200px;
+}
+
+
+
+/****** Turlar sayfası header ************/
